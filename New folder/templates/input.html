@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information - form</title>
+</head>
+<body>
+    <div>
+        <form action="/vote" method="post">
+            <label for="f_name">Full Name: </label>
+            <input type="text" id="f_name" name="f_name" required><br>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age"><br>
+
+            <label for="gen">Gender: </label>
+            <select name="gender" id="gen">
+                <option value="-">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select><br>
+
+            <input type="radio" id="p_1" name="party" value="party 1">
+            <label for="p_1">Party 1</label><br>
+
+            <input type="radio" id="p_2" name="party" value="party 2">
+            <label for="p_2">Party 2</label><br>
+
+            <input type="radio" id="p_3" name="party" value="party 3">
+            <label for="p_3">Party 3</label><br>
+
+            <label for="comment">Users Comment: </label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
